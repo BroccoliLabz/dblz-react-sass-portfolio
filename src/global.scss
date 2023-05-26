@@ -1,0 +1,42 @@
+$mainColor: rgb(116, 116, 116);
+$accentColor: rgba(211, 211, 211,0.6);
+$mainBg: $accentColor;
+$header: rgb(63, 63, 63);
+
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+
+.blocked{
+    opacity: 0.85 !important;
+    scale: 95%;
+    
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0.09;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.09;
+  }
+  100% {
+    opacity: 1;
+  }
+}

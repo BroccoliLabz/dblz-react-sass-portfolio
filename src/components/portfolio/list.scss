@@ -1,0 +1,31 @@
+@import '../../global.scss';
+
+    
+.list1{
+    font-size: 14px;
+    
+    padding: 0.7px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: $mainColor;
+    justify-content: space-around;
+        
+    &.active{
+        color: $header;
+        font-weight: 500;
+    }
+    &:hover{
+            color: $header;
+            font-weight: 700;
+
+    }
+}
+
+@keyframes drop-in {
+    0%{
+        transform: translateY(-300);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
