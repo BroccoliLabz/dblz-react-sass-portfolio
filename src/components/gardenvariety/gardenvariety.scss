@@ -1,0 +1,28 @@
+@import '../../global.scss';
+
+.gardenvariety {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh !important;
+  @include mobile {
+    height: 40vh !important;
+  }
+  img {
+    width: 30vw;
+    @include mobile {
+      width: 100vw;
+    }
+  }
+  .esopng {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+    -webkit-animation: rotate-center 20s linear infinite forwards;
+    animation: rotate-center 20s linear infinite forwards;
+    @include mobile {
+      width: 80vw;
+    }
+  }
+}

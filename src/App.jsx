@@ -1,52 +1,57 @@
-import './app.scss'
-import { useState , useRef } from 'react'
-import { useScrolling } from "react-use"
-import Topbar from "./components/topbar/Topbar"
-import Menu from "./components/menu/Menu"
-import Intro from "./components/intro/Intro"
-import Portfolio from "./components/portfolio/Portfolio"
-import Projects from "./components/projects/Projects"
-import Contact from "./components/contact/Contact"
-import Latest from './components/latest/Latest'
-import Hangman from './components/hangman/Hangman'
-
+import './app.scss';
+import { useState, useRef } from 'react';
+import { useScrolling } from 'react-use';
+import Topbar from './components/topbar/Topbar';
+import Menu from './components/menu/Menu';
+import Intro from './components/intro/Intro';
+import Portfolio from './components/portfolio/Portfolio';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+import Latest from './components/latest/Latest';
+import Hangman from './components/hangman/Hangman';
+import GardenVariety from './components/gardenvariety/GardenVariety';
 
 function App() {
   const scrollRef = useRef(null);
   const scrolling = useScrolling(scrollRef);
-  const [menuOpen,setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
   const sections = [
     {
-      id:0,
-      path:'intro',
-      title:'Home'
+      id: 0,
+      path: 'intro',
+      title: 'Home',
     },
     {
-      id:1,
-      path:'latest',
-      title:'Latest'
+      id: 1,
+      path: 'latest',
+      title: 'Latest',
     },
     {
-      id:2,
-      path:'hangman',
-      title:'Hangman'
+      id: 2,
+      path: 'hangman',
+      title: 'Hangman',
     },
     {
-      id:3,
-      path:'portfolio',
-      title:'Discography'
+      id: 3,
+      path: 'portfolio',
+      title: 'Discography',
     },
     {
-      id:4,
-      path:'projects',
-      title:'Ventures'
+      id: 4,
+      path: 'projects',
+      title: 'Ventures',
     },
     {
-      id:5,
-      path:'contact',
-      title:'Links'
-    }
-  ]
+      id: 5,
+      path: 'gardenvariety',
+      title: 'Garden Variety',
+    },
+    {
+      id: 6,
+      path: 'contact',
+      title: 'Links',
+    },
+  ];
 
   return (
     <div className='app'>
@@ -72,6 +77,7 @@ function App() {
         <Hangman active={!scrolling} />
         <Portfolio active={!scrolling} />
         <Projects active={!scrolling} />
+        <GardenVariety active={!scrolling} />
         <Contact active={!scrolling} />
       </div>
     </div>

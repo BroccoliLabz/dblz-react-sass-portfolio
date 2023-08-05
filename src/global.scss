@@ -1,26 +1,24 @@
 $mainColor: rgb(116, 116, 116);
-$accentColor: rgba(211, 211, 211,0.6);
+$accentColor: rgba(211, 211, 211, 0.6);
 $mainBg: $accentColor;
 $header: rgb(63, 63, 63);
-
 
 $width: 768px;
 
 @mixin mobile {
-    @media (max-width: #{$width}){
-        @content
-    }
+  @media (max-width: #{$width}) {
+    @content;
+  }
 }
 
-.blocked{
-    opacity: 0.85 !important;
-    scale: 95%;
-    
+.blocked {
+  opacity: 0.85 !important;
+  scale: 95%;
 }
 
 .fade-in {
-	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes fade-in {
@@ -38,5 +36,26 @@ $width: 768px;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
