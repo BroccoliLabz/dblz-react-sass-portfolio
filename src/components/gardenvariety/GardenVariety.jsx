@@ -23,6 +23,15 @@ export default function GardenVariety({ active }) {
           src='https://signatur.eso-database.com/30032914/signatur.jpg'
         />
       </a>
+      <a
+        target='_blank'
+        href='https://www.eso-database.com/en/character/mashpi/30426094/'
+      >
+        <img
+          alt=''
+          src='https://signatur.eso-database.com/30426094/signatur.jpg'
+        />
+      </a>
       <img className='esopng' src='assets/images/eso.png' alt='ESO' />
     </div>
   );
