@@ -25,6 +25,7 @@ export default function GardenVariety({ active }) {
       </a>
       <a
         target='_blank'
+        rel='noreferrer'
         href='https://www.eso-database.com/en/character/mashpi/30426094/'
       >
         <img

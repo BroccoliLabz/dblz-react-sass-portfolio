@@ -5,7 +5,7 @@ import Items from './Items';
 import Typewriter from 'typewriter-effect';
 
 export default function Portfolio({ active }) {
-  const [selected, setSelected] = useState(7);
+  const [selected, setSelected] = useState(9);
   const art = [
     {
       id: 0,
@@ -60,6 +60,12 @@ export default function Portfolio({ active }) {
       title: 'AMNESIA',
       img: 'assets/images/amnesia.jpg',
       url: 'https://patreon.com/dblz',
+    },
+    {
+      id: 9,
+      title: 'AMNESIA EP',
+      img: 'assets/images/amnesiadark.png',
+      url: 'https://soundcloud.com/therealdblz/sets/amnesia-release',
     },
   ];
   return (
